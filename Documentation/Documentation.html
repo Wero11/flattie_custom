@@ -1,0 +1,162 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Coda - Corporate Responsive Email Template</title>
+<meta name="description" content="Highly Customizable - Mailchimp and Campaign Monitor Ready" />
+
+<link rel="stylesheet" type="text/css" href="code/style.css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+	
+	//sidebar comments 
+	
+  $("#viewonline").hover(function(){
+    $("#viewhover").css('visibility', 'visible');
+	});
+});
+
+</script>
+
+</head>
+
+<body>
+
+<div class="header">
+	<div class="wrapper">
+    	<div id="logo">
+        	<a href="http://labs.am-themes.com/Coda/index.html">
+        		<img src="http://labs.am-themes.com/Flattie/images/black.png" width="50" height="50" style="display: block; margin-top: 30px;" border="0" alt="WD_Email" />
+            </a>
+        </div>
+        <a id="viewonline" onMouseOver="javascript:toggle();" href="#">
+        	<img src="http://www.am-themes.com/wd_email/images_doc/landpage_04.png" width="48" height="93" style="display: block; float: left;" border="0" alt="Mailchimp" />
+            <img src="http://www.am-themes.com/wd_email/images_doc/landpage_05.png" width="48" height="93" style="display: block; float: left;" border="0" alt="Mailchimp" />
+        </a>
+        <!--
+        <div id="viewhover">
+        	<p>Click Here See The Way The Email Renders Across Different Email Clients</p>
+        </div>
+        -->
+		<div class="clear"></div>
+    </div>
+	<div class="clear"></div>
+</div>
+<div class="clear"></div>
+
+<div class="templates">
+	<div class="clear"></div>
+	<div class="wrapper">
+    	<p>
+By: AMThemes in collaboration with <a href="http://themeforest.net/user/pixel-fabric" >Pixel-Fabric</a><br/>
+email: support@am_themes.com<br/></p>
+    	<p>Thank you for purchasing this theme, we appreciate your business and we are available to help you with any issues related to our theme, as long as they do not cross certain customization boundaries. For extensive customization purposes our representatives are available for hire</p>
+            
+        <h2>Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#images" style="color: #000000;">Changing images</a></li>
+			<li><a href="#responsive" style="color: #000000;">Responsive Coding</a></li>
+			<li><a href="#mobile" style="color: #000000;">Main Image for Mobile View</a></li>
+			<li><a href="#stampready" style="color: #000000;">Editing with StampReady</a></li>
+			<li><a href="#mailchimp" style="color: #000000;">Mailchimp Support</a></li>
+			<li><a href="#cm" style="color: #000000;">Campaign Monitor</a></li>
+		</ol>    
+            
+        <div class="clear"></div>
+        
+        <h3 id="images"><strong>1) Changing images</strong></h3>
+		<p>Changing images is really easy. Just open the folder called 'images' and replace them with yours. The Template should automatically replace the images with the new ones.</p>
+		
+		<img src="http://www.am-themes.com/wd_email/images_doc/changinghttp://www.am-themes.com/wd_email/images_doc.jpg" alt="HTML Structure" /><br/><br/>
+        
+        <h3 id="responsive"><strong>3) Responsive Coding</strong></h3>
+		
+		<p>Responsive coding might sound a bit tough, but you shouldn't get scared, it's actually really easy. What is important to keep in mind is that there are 3 layouts, one for desktop, one for landscape smartphone views and one for portrait smartphone views.</p>
+        
+        <p>It's done through media queries, and in this case we use two. One with a max-width of 460px and one with a max-width of 320px.</p>
+        
+        <p>A full description can be found here:</p>
+        
+        <a href="http://www.campaignmonitor.com/guides/mobile/subscribe/"></a>
+        
+        <p>And we can help with any other queries you might have.</p>
+        
+        <h3 id="mobile"><strong>3) Main Image for Mobile View</strong></h3>
+        
+        <p>Thanks to the responsiveness of this email, we can now target our clients better. Most of the clients who are looking at the template on a phone don't really see anything, especially when it comes to the hero banner of your email. So the banner which would normally be designed to attract the most attention will pass unnoticed, that's why we need to change it for mobile views and put a new one designed especially for mobile purposes. </p>
+        
+        <p>That's why in the stylesheet we change the "main_image" background using this code:</p>
+        
+        <pre>
+        	td[class="main_image"] {
+		width: 440px !important;
+		height: 212px !important;
+		background: url('http://www.am-themes.com/wd_email/http://www.am-themes.com/wd_email/images_doc/wd-email2_06_mb.png') no-repeat;
+		display: block;
+		background-size: contain;
+		}   
+        </pre>
+        
+        <h3 id="mailchimp"><strong>3) Mailchimp Support</strong></h3>
+		<p>Please, follow these steps to import any Template to MailChimp:<br/><br/>
+			1. Go to http://www.mailchimp.com and login.<br/>
+			2. Simply go to My Templates.<br/><br/>
+			
+			<img src="http://www.am-themes.com/wd_email/images_doc/mytemplates.jpg"><br/><br/>
+			
+			3. Click 'Import Template' and choose your this Template from the desktop.<br/><br/>
+			
+			<img src="http://www.am-themes.com/wd_email/images_doc/import.jpg"><br/><br/>
+			
+			4. Simply click on upload and you're good to go!<br/><br/>
+
+			Here is a clear explanation of how to import a template: <a href="http://kb.mailchimp.com/article/how-do-i-import-a-template">http://kb.mailchimp.com/article/how-do-i-import-a-template/</a>
+
+			<br/>
+			<br/>
+            Getting Started with MailChimp's Template Language: <a href="http://kb.mailchimp.com/article/how-do-i-upload-an-image/">http://kb.mailchimp.com/article/how-do-i-upload-an-image/</a>
+			<br/>
+            Custom Template Showcase: <a href="http://eepurl.com/cdN2v">http://eepurl.com/cdN2v</a>
+			<br/>
+            Creating Editable Template Styles: <a href="http://eepurl.com/ck1yj">http://eepurl.com/ck1yj</a>
+			<br/>
+            Working With Variant Selectors: <a href="http://eepurl.com/ck349">http://eepurl.com/ck349</a>
+			<br/>
+            Support: <a href="http://kb.mailchimp.com/topic/custom-templates">http://kb.mailchimp.com/topic/custom-templates</a>
+			
+		</p>
+		
+		<a href="http://mailchimp.com"><img src="http://www.am-themes.com/wd_email/images_doc/mailchimp.jpg" alt="Mail Chimp" /></a><br/><br/>
+        
+        <h3 id="cm"><strong>5) Campaign Monitor</strong></h3>
+        
+        <p>This tempalte is also ready for Campaign Monitor. This means that it can be edited once you upload it to the engine, and that it also has the unsubscribe and view mail online links set up so you don't have to worry about doing that.</p>
+        
+        <p>You can find more info about how their ESP works by going here:</p> <a href="http://www.campaignmonitor.com/create/editable-content/">http://www.campaignmonitor.com/create/editable-content/</a>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="wrapper">
+	<a class="purchase" href="mailto:support@am-themes.com" style="margin-bottom: 20px;">
+		<img src="http://www.am-themes.com/wd_email/images_doc/contact.png" width="220" height="50" style="display: block;" border="0" alt="Purchase Now!" />
+	</a>
+    
+    <div style="margin-bottom: 20px; float: right;">
+    	<h4 style="font-family: Verdana, Geneva, sans-serif; font-size: 16px; font-weight: bold; float: left; line-height: 0px; margin-right: 10px;">Developed by:</h4>
+	    <img src="http://www.am-themes.com/wd_email/images_doc/am_themes_LOGO.png" height="50" alt="" style="float: left; display: block;" border="0" />
+        <h4 style="font-family: Verdana, Geneva, sans-serif; font-size: 16px; font-weight: bold; float: left; line-height: 0px; margin-right: 10px;">Designed by:</h4>
+		<img src="http://www.am-themes.com/wd_email/images_doc/logo-pixel-fabric.png" height="50" alt="" style="float: left; display: block;" border="0" />
+    </div>
+<div class="clear"></div>
+    
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,1738 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+
+<title>Flattie - Flat Modern Email Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url('http://themes.googleusercontent.com/static/fonts/opensans/v6/EInbV5DfGHOiMmvb1Xr-hqRDOzjiPcYnFooOUGCOsRk.woff') format('woff');
+}
+
+@media screen and (max-width: 480px) and (min-width: 321px) {
+	.nomargin {
+		margin: 0 !important;
+	}
+	
+	.padding {
+		width: 10px !important;
+	}
+	
+	.content_row {
+		width: 440px !important;
+	}
+	
+	.wrapper { 
+		width: 440px !important;
+	}
+	
+	.pre_header {
+		text-align: center !important;
+	}
+	
+	.logo img {
+		margin: 0 auto !important;
+		max-width: 280px !important;
+		height: auto !important;
+	}
+	
+	.logo {
+		display: block;
+		float: left;
+		width: 440px !important;
+		margin-bottom: 20px !important;
+	}
+	
+	.header_right {
+		display: block;
+		float: left;
+		text-align: center !important;
+		margin: 0 auto !important;
+		width: 440px !important;
+	}
+	
+	.header_spacer {
+		display: none;
+	}
+	
+	.social_header {
+		margin: 0 auto !important;
+		display: block;
+		width: 130px !important;
+	}
+	
+	.featured_image img {
+		max-width: 440px !important;
+		height: auto !important;
+	}
+	
+	.blog_image { 
+		display: block;
+		float: left;
+		width: 440px !important;
+	}
+	
+	.blog_image img {
+		margin: 20px auto !important;
+	}
+	
+	.blog_description {
+		display: block;
+		float: left;
+		width: 440px !important;
+		text-align: center;
+	}
+	
+	.blog_button {
+		margin: 0 auto !important
+	}
+	
+	.feature_list {
+		width: 440px !important;
+		display: block;
+		float: left;
+		text-align: center !important;
+	}
+	
+	.feature_list p {
+		text-align: center !important;
+	}
+	
+	.feature_list .button {
+		margin: 0 auto !important;
+	}
+	
+	.feature_list_right {
+		width: 440px !important;
+		display: block;
+		float: left;
+	}
+	
+	.feature_list_right img {
+		margin: 20px auto !important;
+		max-width: 440px !important;
+		height: auto !important;
+	}
+	
+	.footer_spacer {
+		display: none;
+	}
+	
+	.footer_one_third {
+		width: 440px !important;
+		display: block;
+		float: left;
+		text-align: center;
+		line-height: 20px !important;
+	}
+	
+	.footer_one_third img{
+		margin-left: 35% !important;
+	}
+	
+	.one_third {
+		display: block;
+		float: left;
+		width: 440px !important;
+		margin: 0 auto !important;
+	}
+	
+	.one_third_row {
+		width: 440px !important;
+	}
+	
+	.one_third_row img {
+		margin: 20px 0 5px;
+		max-width: 440px !important;
+		height: auto !important;
+	}
+	
+	.one_half {
+		width: 440px !important;
+		margin: 0 auto !important;
+		float: left;
+		display: block;
+		margin: 20px 0 10px !important;
+	}
+	
+	.one_half img{
+		height: auto !important;
+		max-width: 440px !important;
+	}
+	
+	.one_half_row {
+		width: 440px !important;
+	}
+	
+	.featured_product img{
+		max-width: 428px !important;
+		height: auto !important;
+	}
+	
+	.featured_product {
+		width: 428px !important;
+	}
+	
+	.navbar {
+		text-align: center !important;
+		margin: 0 auto !important;
+	}
+	
+	.small_product_box {
+		display: block;
+		float: left;
+		margin: 0 auto !important;
+		width: 197px !important;
+		margin: 10px 0 20px 121px !important;
+	}
+	
+	.big_product_box {
+		display: block;
+		float: left;
+		margin: 10px 0 20px 27px !important;
+	}
+	
+	.small_prod_box_main img {
+		height: auto !important;
+		max-width: 175px !important;
+	}
+	
+	.big_prod_image {
+		heigth: auto !important;
+		width: 175px !important;
+	}
+	
+	.footer_two_thirds {
+		width: 440px !important;
+		float: left;
+		display: block;
+		margin: 10px 0 20px !important;
+	}
+	
+	.one_half {
+		display: block;
+		float: left;
+		margin: 10px 0 20px !important;
+		width: 440px !important;
+		text-align: center !important;
+	}
+	
+	.one_half .cta_button {
+		margin: 0 auto !important;
+	}
+	
+	.price_table {
+		display: block;
+		float: left;
+		width: 440px !important;
+	}
+	
+	.price_table .price_mob{
+		margin: 10px auto 30px !important;
+	}
+	
+	.one_half .test_mob {
+		margin: 0 auto !important;
+	}
+	
+	.footer_menu {
+		text-align: center !important;
+		width: 440px !important;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.nomargin {
+		margin: 0 !important;
+	}
+	
+	.padding {
+		width: 10px !important;
+	}
+	
+	.content_row {
+		width: 280px !important;
+	}
+	
+	.wrapper { 
+		width: 280px !important;
+	}
+	
+	.pre_header {
+		text-align: center !important;
+	}
+	
+	.logo img {
+		margin: 0 auto !important;
+		max-width: 280px !important;
+		height: auto !important;
+	}
+	
+	.logo {
+		display: block;
+		float: left;
+		width: 280px !important;
+		margin-bottom: 20px !important;
+	}
+	
+	.header_right {
+		display: block;
+		float: left;
+		text-align: center !important;
+		margin: 0 auto !important;
+		width: 280px !important;
+	}
+	
+	.header_spacer {
+		display: none;
+	}
+	
+	.social_header {
+		margin: 0 auto !important;
+		display: block;
+		width: 130px !important;
+	}
+	
+	.featured_image img {
+		max-width: 280px !important;
+		height: auto !important;
+	}
+	
+	.blog_image { 
+		display: block;
+		float: left;
+		width: 280px !important;
+	}
+	
+	.blog_image img {
+		margin: 20px auto !important;
+	}
+	
+	.blog_description {
+		display: block;
+		float: left;
+		width: 280px !important;
+		text-align: center;
+	}
+	
+	.blog_button {
+		margin: 0 auto !important
+	}
+	
+	.feature_list {
+		width: 280px !important;
+		display: block;
+		float: left;
+		text-align: center !important;
+	}
+	
+	.feature_list p {
+		text-align: center !important;
+	}
+	
+	.feature_list .button {
+		margin: 0 auto !important;
+	}
+	
+	.feature_list ul{
+		font-size: 13px !important;
+	}
+	
+	.feature_list_right {
+		width: 280px !important;
+		display: block;
+		float: left;
+	}
+	
+	.feature_list_right img {
+		margin: 20px auto !important;
+		max-width: 280px !important;
+		height: auto !important;
+	}
+	
+	.footer_spacer {
+		display: none;
+	}
+	
+	.footer_one_third {
+		width: 280px !important;
+		display: block;
+		float: left;
+		text-align: center;
+		line-height: 20px !important;
+	}
+	
+	.footer_one_third img{
+		margin-left: 25% !important;
+	}
+	
+	.one_third {
+		display: block;
+		float: left;
+		width: 280px !important;
+		margin: 0 auto !important;
+	}
+	
+	.one_third_row {
+		width: 280px !important;
+	}
+	
+	.one_third_row img {
+		margin: 20px 0 5px;
+		max-width: 280px !important;
+		height: auto !important;
+	}
+	
+	.one_half {
+		width: 280px !important;
+		margin: 0 auto !important;
+		float: left;
+		display: block;
+		margin: 20px 0 10px !important;
+	}
+	
+	.one_half img{
+		height: auto !important;
+		max-width: 280px !important;
+	}
+	
+	.one_half_row {
+		width: 280px !important;
+	}
+	
+	.featured_product img{
+		max-width: 268px !important;
+		height: auto !important;
+	}
+	
+	.featured_product {
+		width: 268px !important;
+	}
+	
+	.navbar {
+		margin: 0 auto !important;
+	}
+	
+	.content_row {
+		text-align: center !important;
+	}
+	
+	.small_product_box {
+		display: block;
+		float: left;
+		margin: 0 auto !important;
+		width: 197px !important;
+		margin: 10px 0 20px 45px!important;
+	}
+	
+	.big_product_box {
+		display: block;
+		float: left;
+		margin: 10px 0 20px 45px !important;
+		width: 180px !important;
+	}
+	
+	.big_prod_spacer {
+		display: none !important;
+	}
+	
+	.big_prod_image {
+		display: block;
+		float: left;
+		width: 175px;
+	}
+	
+	.big_box_info {
+		display: block;
+		float: left;
+		text-align: center !important;
+	}
+	
+	.big_product_main {
+		width: 170px !important;
+		padding: 0 10px !important;
+	}
+	
+	.big_bottom_shadow {
+		width: 198px !important;
+	}
+	
+	.big_side_shadow {
+		height: 410px !important;
+	}
+	
+	.big_box_description {
+		text-align: center !important;
+	}
+	
+	.small_prod_box_main img {
+		height: auto !important;
+		max-width: 175px !important;
+	}
+	
+	.big_prod_image {
+		heigth: auto !important;
+		width: 175px !important;
+	}
+	
+	.footer_two_thirds {
+		width: 280px !important;
+		float: left;
+		display: block;
+		margin: 10px 0 20px !important;
+	}
+	
+	.one_half {
+		display: block;
+		float: left;
+		margin: 10px 0 20px !important;
+		width: 280px !important;
+		text-align: center !important;
+	}
+	
+	.one_half .cta_button {
+		margin: 0 auto !important;
+	}
+	
+	.price_table {
+		display: block;
+		float: left;
+		width: 280px !important;
+	}
+	
+	.price_table .price_mob{
+		margin: 10px auto 30px !important;
+	}
+	
+	.one_half .test_mob {
+		margin: 0 auto !important;
+	}
+	
+	.footer_one_third table {
+		margin: 0 auto !important;
+	}
+	
+	.footer_menu {
+		text-align: center !important;
+		width: 280 !important;
+	}
+
+}
+
+@media screen and (max-width: 480px) and (min-width: 321px) {
+	.nomob {
+		display: none;
+	}
+	
+	td[id="nomobile"]{
+		display: none !important;
+	}
+	
+	td[id="nomobile1"]{
+		display: none !important;
+	}
+	
+	td[id="nomobile2"]{
+		display: none !important;
+	}
+	
+	td[id="nomobile3"]{
+		display: none !important;
+	}
+	
+	td[id="nomobile4"]{
+		display: none !important;
+	}
+	
+	td[id="nomobile5"]{
+		display: none !important;
+	}
+	
+	td[id="nomobile6"]{
+		display: none !important;
+	}
+	
+	td[id="offermobileoffset"]{
+		width: 95px !important;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.nomob {
+		display: none;
+	}
+	
+	td[id="nomobile"]{
+		display: none !important;
+	}
+	
+	td[id="nomobile1"]{
+		display: none !important;
+	}
+	
+	td[id="nomobile2"]{
+		display: none !important;
+	}
+	
+	td[id="nomobile3"]{
+		display: none !important;
+	}
+	
+	td[id="nomobile4"]{
+		display: none !important;
+	}
+	
+	td[id="nomobile5"]{
+		display: none !important;
+	}
+	
+	td[id="nomobile6"]{
+		display: none !important;
+	}
+}
+</style>
+
+
+</head>
+
+<body style="background-color: #ffffff; font-family: 'Open Sans'; font-size: 12px; color: #4c595c; margin: 0;">
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper_table" style="width: 100%;">
+     <tr>
+		<td bgcolor="#444444" align="center">
+          	<table cellspacing="0" cellpadding="0" border="0">
+               	<tr>
+                    	<td width="50" class="padding">
+                         </td>
+                         <td width="600" class="wrapper">
+                         	<table cellspacing="0" cellpadding="0" border="0">
+                              	<tr>
+								<td height="15">
+								</td>
+							</tr>
+                                   <tr>
+                                   	<td class="content_row pre_header" width="600" style="font-family: 'Open Sans'; font-size: 12px; color: #838383; text-align: right;">
+                                        	<singleline>Problem viewing newsletter? </singleline><a href="#" style="color: #838383; text-decoration: none;"><singleline>View this mail online</singleline></a>
+                                        </td>
+                                   </tr>
+                                   <tr>
+								<td height="15">
+								</td>
+							</tr>
+                              </table>
+                         </td>
+                         <td width="50" class="padding">
+                         </td>
+                    </tr>
+               </table>
+		</td>
+	</tr>
+     <tr>
+		<td bgcolor="#27ae60" align="center">
+          	<table cellspacing="0" cellpadding="0" border="0">
+               	<tr>
+                    	<td width="50" class="padding">
+                         </td>
+                         <td width="600" class="wrapper">
+                         	<table cellspacing="0" cellpadding="0" border="0">
+                              	<tr>
+                                   	<td class="content_row" width="600" height="20">
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                   	<td class="content_row" width="600">
+                                        	<table cellspacing="0" cellpadding="0" border="0">
+                                             	<tr>
+                                                  	<td class="logo" valign="top" width="280">
+                                                       	<img editable="true" src="http://labs.am-themes.com/Flattie/images/logo.png" width="50" height="50" style="display: block;" border="0" alt="Flattie" />
+                                                       </td>
+                                                       <td class="header_spacer" width="40">
+                                                       </td>
+                                                       <td class="header_right" valign="top" width="280" align="right">
+                                                       	<table class="navbar" cellspacing="0" cellpadding="0" border="0">
+                                                                 <tr>
+                                                                 	<td style="text-align: right; color: #ffffff;">
+                                                                      	<a href="#" style="font-family: 'Open Sans'; font-size: 14px; text-transform: uppercase; line-height: 50px; text-decoration: none; color: #ffffff; font-weight: 800;"><singleline>HOME</singleline></a>
+                                                                           &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                                                                           <a href="#" style="font-family: 'Open Sans'; font-size: 14px; text-transform: uppercase; line-height: 50px; text-decoration: none; color: #ffffff; font-weight: 800;"><singleline>Products</singleline></a>
+                                                                           &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                                                                           <a href="#" style="font-family: 'Open Sans'; font-size: 14px; text-transform: uppercase; line-height: 50px; text-decoration: none; color: #ffffff; font-weight: 800;"><singleline>About Us</singleline></a>
+                                                                           &nbsp;&nbsp;
+                                                                      </td>
+                                                                 </tr>
+                                                            </table>
+                                                       </td>
+                                                  </tr>
+                                             </table>
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                   	<td class="content_row" width="600" height="20">
+                                        </td>
+                                   </tr>
+                              </table>
+                         </td>
+                         <td width="50" class="padding">
+                         </td>
+                    </tr>
+               </table>
+		</td>
+	</tr>
+     <tr>
+		<td bgcolor="#27ae60" align="center">
+          	<table cellspacing="0" cellpadding="0" border="0">
+               	<tr>
+                    	<td width="50" class="padding">
+                         </td>
+                         <td width="600" class="wrapper">
+                         	<table cellspacing="0" cellpadding="0" border="0">
+                              	<tr>
+                                   	<td class="content_row" width="600">
+                                        	<table cellspacing="0" cellpadding="0" border="0">
+                                             	<tr>
+                                                  	<td width="6" bgcolor="#ffffff">
+                                                       </td>
+                                                       <td width="588" class="featured_product">
+                                                       	<table cellspacing="0" cellpadding="0" border="0">
+                                                            	<tr>
+                                                                 	<td width="588" height="6" bgcolor="#ffffff">
+                                                                      </td>
+                                                                 </tr>
+                                                                 <tr>
+                                                                 	<td width="588" class="featured_product">
+                                                                      	<a href="#" style="text-decoration: none;">
+                                                                           	<img editable="true" src="http://labs.am-themes.com/Flattie/images/flattie3_03.png" width="588" height="150" style="display: block;" border="0" alt="FeaturedImage"  />
+                                                                           </a>
+                                                                      </td>
+                                                                 </tr>
+                                                            </table>
+                                                       </td>
+                                                       <td width="6" bgcolor="#ffffff">
+                                                       </td>
+                                                  </tr>
+                                             </table>
+                                        </td>
+                                   </tr>
+						</table>
+					</td>
+                         <td width="50" class="padding">
+                         </td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+     <tr>
+		<td bgcolor="#219050" align="center">
+          	<table cellspacing="0" cellpadding="0" border="0">
+               	<tr>
+                    	<td width="50" class="padding">
+                         </td>
+                         <td width="600" class="wrapper">
+                         	<table cellspacing="0" cellpadding="0" border="0">
+                              	<tr>
+                                   	<td class="content_row" width="600">
+                                        	<table cellspacing="0" cellpadding="0" border="0">
+                                             	<tr>
+                                                  	<td width="6" bgcolor="#ffffff">
+                                                       </td>
+                                                       <td width="588" class="featured_product">
+                                                       	<table cellspacing="0" cellpadding="0" border="0">
+                                                                 <tr>
+                                                                 	<td width="588" class="featured_product">
+                                                                      	<a href="#" style="text-decoration: none;">
+                                                                           	<img editable="true" src="http://labs.am-themes.com/Flattie/images/flattie3_05.png" width="588" height="74" style="display: block;" border="0" alt="FeaturedImage"  />
+                                                                           </a>
+                                                                      </td>
+                                                                 </tr>
+                                                                 <tr>
+                                                                 	<td width="588" height="6" bgcolor="#ffffff">
+                                                                      </td>
+                                                                 </tr>
+                                                            </table>
+                                                       </td>
+                                                       <td width="6" bgcolor="#ffffff">
+                                                       </td>
+                                                  </tr>
+                                             </table>
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                   	<td class="content_row" width="600" height="10">
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                   	<td class="content_row" width="600">
+                                        	<a href="#" style="font-family: 'Open Sans'; font-size: 18px; font-weight: 800; text-transform: uppercase; color: #b5e1c8; line-height: 30px; text-decoration: none;"><singleline>Heaven in mouth <span style="color: #fafeff;">$7.99</span></singleline> </a>
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                   	<td class="content_row" width="600" height="20">
+                                        </td>
+                                   </tr>
+						</table>
+					</td>
+                         <td width="50" class="padding">
+                         </td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+     <tr>
+		<td bgcolor="#dedfe0" align="center">
+          	<table cellspacing="0" cellpadding="0" border="0">
+               	<tr>
+                    	<td width="50" class="padding">
+                         </td>
+                         <td width="600" class="wrapper">
+                         	<table cellspacing="0" cellpadding="0" border="0">
+                              	<tr>
+                                   	<td class="content_row" width="600" height="40">
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                   	<td class="content_row" width="600">
+                                        	<a href="#" style="font-family: 'Open Sans'; font-size: 18px; font-weight: 800; text-transform: uppercase; color: #4c595c; line-height: 30px; text-decoration: none;"><singleline> New Product Arrivals</singleline> </a>
+                                        </td>
+							</tr>
+                                   <tr>
+                                   	<td class="content_row" width="600" height="20">
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                   	<td class="content_row" width="600">
+                                        	<table cellspacing="0" cellpadding="0" border="0">
+                                             	<tr>
+                                                  	<td class="small_product_box" valign="top" width="197">
+                                                       	<table cellspacing="0" cellpadding="0" border="0">
+                                                                 <tr>
+                                                                 	<td class="small_product_box_full">
+                                                                      	<table cellspacing="0" cellpadding="0" border="0">
+                                                                           	<tr>
+                                                                                	<td class="small_prod_box_main" valign="top" bgcolor="#e9e9e9" style="border-radius: 5px;">
+                                                                                		<table cellspacing="0" cellpadding="0" border="0">
+                                                                                          	<tr>
+                                                                                               	<td height="10">
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                               	<td width="194">
+                                                                                                    	<table cellspacing="0" cellpadding="0" border="0">
+                                                                                                         	<tr>
+                                                                                                              	<td width="10">
+                                                                                                                   </td>
+                                                                                                                   <td width="174">
+                                                                                                                   	<a href="#" style="text-decoration: none;">
+                                                                                                                        	<img editable="true" src="http://labs.am-themes.com/Flattie/images/flattie3_08.png" width="174" height="92" style="display: block;" border="0" alt="" />
+                                                                                                                        </a>
+                                                                                                                   </td>
+                                                                                                                   <td width="10">
+                                                                                                                   </td>
+                                                                                                              </tr>
+                                                                                                         </table>
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                               	<td height="10">
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                               	<td width="194" style="text-align: center; line-height: 25px;">
+                                                                                                    	<a href="#" style="font-family: 'Open Sans'; font-size: 14px; font-weight: 800; color: #828282; text-decoration: none; text-transform: uppercase;">
+                                                                                                         <singleline>Tasticious chicken<br/>
+                                                                                                         <span style="color: #585858; font-size: 20px;">$12,99</span></singleline>
+                                                                                                         </a>
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                               	<td height="10">
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                               	<td width="194">
+                                                                                                    	<table class="blog_button" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                                                                              <tr>
+                                                                                                                   <td width="105" height="30" bgcolor="#e74c3c" align="center" style="border-radius:4px;">
+                                                                                                                        <a href="#" style="font-family: 'Open Sans'; font-weight: 800;font-size: 14px; color: #ffffff; text-align: center; line-height: 30px; text-transform: uppercase; text-decoration: none;">
+                                                                                                                            <singleline> Buy</singleline>
+                                                                                                                        </a>
+                                                                                                                   </td>
+                                                                                                              </tr>
+                                                                                                         </table>
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                          </table>
+                                                                                	</td>
+                                                                                     <td class="small_prod_box_side" width="3">
+                                                                                     	<img editable="true" src="http://labs.am-themes.com/Flattie/images/shaddow_right.png" width="3" height="216" style="display: block;" border="0" alt=""  />
+                                                                                     </td>
+                                                                                </tr>
+                                                                           </table>
+                                                                      </td>
+                                                                 </tr>
+                                                                 <tr>
+                                                                 	<td>
+                                                                      	<img editable="true" src="http://labs.am-themes.com/Flattie/images/shaddow_bottom_s.png" width="197" height="4" style="display: block;" border="0" alt=""  />
+                                                                      </td>
+                                                                 </tr>
+                                                            </table>
+                                                       </td>
+                                                       <td class="nomob" width="17">
+                                                       </td>
+                                                       <td class="big_product_box" valign="top" width="386">
+                                                       	<table cellspacing="0" cellpadding="0" border="0">
+                                                            	<tr>
+                                                                 	<td class="big_product">
+                                                                      	<table cellspacing="0" cellpadding="0" border="0">
+                                                                           	<tr>
+                                                                                	<td class="big_product_main" width="383" bgcolor="#e9e9e9" style="border-radius: 5px;">
+                                                                                     	<table cellspacing="0" cellpadding="0" border="0">
+                                                                                          	<tr>
+                                                                                               	<td height="10">
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                                    <td class="big_prod_container">
+                                                                                                    	<table cellspacing="0" cellpadding="0" border="0">
+                                                                                                         	<tr>
+                                                                                                              	<td width="10">
+                                                                                                                   </td>
+                                                                                                                   <td class="big_prod_image" valign="top" width="175">
+                                                                                                                   	<a href="#" style="text-decoration: none;">
+                                                                                                                        	<img editable="true" src="http://labs.am-themes.com/Flattie/images/flattie3_10.png" width="174" height="195" style="display: block;" border="0" alt="Image"  />
+                                                                                                                        </a>
+                                                                                                                   </td>
+                                                                                                                   <td width="20" class="big_prod_spacer">
+                                                                                                                   </td>
+                                                                                                                   <td width="165" class="big_box_info" valign="top">
+                                                                                                                   	<table cellspacing="0" cellpadding="0" border="0">
+                                                                                                                        	<tr>
+                                                                                                                             	<td width="165" style="text-align: center; line-height: 26px;">
+                                                                                                                                       <a href="#" style="font-family: 'Open Sans'; font-size: 14px; font-weight: 800; color: #828282; text-decoration: none; text-transform: uppercase;">
+                                                                                                                                       <singleline>Yummy Salad<br/>
+                                                                                                                                       <span style="color: #585858; font-size: 20px;">$46,99</span></singleline>
+                                                                                                                                       </a>
+                                                                                                                                 	</td>
+                                                                                                                            	</tr>
+                                                                                                                             <tr>
+                                                                                                                             	<td width="165" height="10">
+                                                                                                                                  </td>
+                                                                                                                             </tr>
+                                                                                                                             <tr>
+                                                                                                                             	<td width="165" class="big_box_description" style="text-align:left; color: #828282; font-size: 13px; font-family: 'Open Sans'; line-height:18px;">
+                                                                                                                                  	<singleline>Suspendisse interdum ris sit amet est egestas eget pulvinar mauris faucibus. Vivamus sapien eros.</singleline>
+                                                                                                                                  </td>
+                                                                                                                             </tr>
+                                                                                                                             <tr>
+                                                                                                                             	<td width="165" height="20">
+                                                                                                                                  </td>
+                                                                                                                             </tr>
+                                                                                                                             <tr>
+                                                                                                                             	<td width="165">
+                                                                                                                                  	<table class="blog_button" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                                                                                                            <tr>
+                                                                                                                                                 <td width="105" height="30" bgcolor="#e74c3c" align="center" style="border-radius:4px;">
+                                                                                                                                                      <a href="#" style="font-family: 'Open Sans'; font-weight: 800;font-size: 14px; color: #ffffff; text-align: center; line-height: 30px; text-transform: uppercase; text-decoration: none;">
+                                                                                                                                                           <singleline>Buy</singleline>
+                                                                                                                                                      </a>
+                                                                                                                                                 </td>
+                                                                                                                                            </tr>
+                                                                                                                                       </table>
+                                                                                                                                  </td>
+                                                                                                                             </tr>
+                                                                                                                        </table>
+                                                                                                                   </td>
+                                                                                                                   <td width="10">
+                                                                                                                   </td>
+                                                                                                              </tr>
+                                                                                                         </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td height="10">
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                          </table>
+                                                                                     </td>
+                                                                                     <td class="big_product_side">
+                                                                                     	<img editable="true" class="big_side_shadow" src="http://labs.am-themes.com/Flattie/images/shaddow_right.png" width="3" height="216" style="display: block;" border="0" alt="" />
+                                                                                     </td>
+                                                                                </tr>
+                                                                           </table>
+                                                                      </td>
+                                                                 </tr>
+                                                                 <tr>
+                                                                 	<td class="big_border_bottom">
+                                                                      	<img editable="true" class="big_bottom_shadow" src="http://labs.am-themes.com/Flattie/images/shaddow_bottom_b.png" width="386" height="4" style="display: block;" border="0" alt=""  />
+                                                                      </td>
+                                                                 </tr>
+                                                            </table>
+                                                       </td>
+                                                  </tr>
+                                             </table>
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                   	<td class="content_row" width="600" height="20">
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                   	<td class="content_row" width="600">
+                                        	<table cellspacing="0" cellpadding="0" border="0">
+                                             	<tr>
+                                                       <td class="big_product_box" valign="top" width="386">
+                                                       	<table cellspacing="0" cellpadding="0" border="0">
+                                                            	<tr>
+                                                                 	<td class="big_product">
+                                                                      	<table cellspacing="0" cellpadding="0" border="0">
+                                                                           	<tr>
+                                                                                	<td class="big_product_main" width="383" bgcolor="#e9e9e9" style="border-radius: 5px;">
+                                                                                     	<table cellspacing="0" cellpadding="0" border="0">
+                                                                                          	<tr>
+                                                                                               	<td height="10">
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                                    <td class="big_prod_container">
+                                                                                                    	<table cellspacing="0" cellpadding="0" border="0">
+                                                                                                         	<tr>
+                                                                                                              	<td width="10">
+                                                                                                                   </td>
+                                                                                                                   <td class="big_prod_image" valign="top" width="175">
+                                                                                                                   	<a href="#" style="text-decoration: none;">
+                                                                                                                        	<img editable="true" src="http://labs.am-themes.com/Flattie/images/flattie3_22.png" width="174" height="195" style="display: block;" border="0" alt="Image"  />
+                                                                                                                        </a>
+                                                                                                                   </td>
+                                                                                                                   <td width="20" class="big_prod_spacer">
+                                                                                                                   </td>
+                                                                                                                   <td width="165" class="big_box_info" valign="top">
+                                                                                                                   	<table cellspacing="0" cellpadding="0" border="0">
+                                                                                                                        	<tr>
+                                                                                                                             	<td width="165" style="text-align: center; line-height: 26px;">
+                                                                                                                                       <a href="#" style="font-family: 'Open Sans'; font-size: 14px; font-weight: 800; color: #828282; text-decoration: none; text-transform: uppercase;">
+                                                                                                                                       <singleline>Yummy Salad<br/>
+                                                                                                                                       <span style="color: #585858; font-size: 20px;">$46,99</span></singleline>
+                                                                                                                                       </a>
+                                                                                                                                 	</td>
+                                                                                                                            	</tr>
+                                                                                                                             <tr>
+                                                                                                                             	<td width="165" height="10">
+                                                                                                                                  </td>
+                                                                                                                             </tr>
+                                                                                                                             <tr>
+                                                                                                                             	<td width="165" class="big_box_description" style="text-align:left; color: #828282; font-size: 13px; font-family: 'Open Sans'; line-height:18px;">
+                                                                                                                                  	<singleline>Suspendisse interdum ris sit amet est egestas eget pulvinar mauris faucibus. Vivamus sapien eros.</singleline>
+                                                                                                                                  </td>
+                                                                                                                             </tr>
+                                                                                                                             <tr>
+                                                                                                                             	<td width="165" height="20">
+                                                                                                                                  </td>
+                                                                                                                             </tr>
+                                                                                                                             <tr>
+                                                                                                                             	<td width="165">
+                                                                                                                                  	<table class="blog_button" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                                                                                                            <tr>
+                                                                                                                                                 <td width="105" height="30" bgcolor="#e74c3c" align="center" style="border-radius:4px;">
+                                                                                                                                                      <a href="#" style="font-family: 'Open Sans'; font-weight: 800;font-size: 14px; color: #ffffff; text-align: center; line-height: 30px; text-transform: uppercase; text-decoration: none;">
+                                                                                                                                                           <singleline>Buy</singleline>
+                                                                                                                                                      </a>
+                                                                                                                                                 </td>
+                                                                                                                                            </tr>
+                                                                                                                                       </table>
+                                                                                                                                  </td>
+                                                                                                                             </tr>
+                                                                                                                        </table>
+                                                                                                                   </td>
+                                                                                                                   <td width="10">
+                                                                                                                   </td>
+                                                                                                              </tr>
+                                                                                                         </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td height="10">
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                          </table>
+                                                                                     </td>
+                                                                                     <td class="big_product_side">
+                                                                                     	<img editable="true" class="big_side_shadow" src="http://labs.am-themes.com/Flattie/images/shaddow_right.png" width="3" height="216" style="display: block;" border="0" alt="" />
+                                                                                     </td>
+                                                                                </tr>
+                                                                           </table>
+                                                                      </td>
+                                                                 </tr>
+                                                                 <tr>
+                                                                 	<td class="big_border_bottom">
+                                                                      	<img editable="true" class="big_bottom_shadow" src="http://labs.am-themes.com/Flattie/images/shaddow_bottom_b.png" width="386" height="4" style="display: block;" border="0" alt=""  />
+                                                                      </td>
+                                                                 </tr>
+                                                            </table>
+                                                       </td>
+                                                       <td class="nomob" width="17">
+                                                       </td>
+                                                  	<td class="small_product_box" valign="top" width="197">
+                                                       	<table cellspacing="0" cellpadding="0" border="0">
+                                                                 <tr>
+                                                                 	<td class="small_product_box_full">
+                                                                      	<table cellspacing="0" cellpadding="0" border="0">
+                                                                           	<tr>
+                                                                                	<td class="small_prod_box_main" valign="top" bgcolor="#e9e9e9" style="border-radius: 5px;">
+                                                                                		<table cellspacing="0" cellpadding="0" border="0">
+                                                                                          	<tr>
+                                                                                               	<td height="10">
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                               	<td width="194">
+                                                                                                    	<table cellspacing="0" cellpadding="0" border="0">
+                                                                                                         	<tr>
+                                                                                                              	<td width="10">
+                                                                                                                   </td>
+                                                                                                                   <td width="174">
+                                                                                                                   	<a href="#" style="text-decoration: none;">
+                                                                                                                        	<img editable="true" src="http://labs.am-themes.com/Flattie/images/flattie3_25.png" width="174" height="92" style="display: block;" border="0" alt="" />
+                                                                                                                        </a>
+                                                                                                                   </td>
+                                                                                                                   <td width="10">
+                                                                                                                   </td>
+                                                                                                              </tr>
+                                                                                                         </table>
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                               	<td height="10">
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                               	<td width="194" style="text-align: center; line-height: 25px;">
+                                                                                                    	<a href="#" style="font-family: 'Open Sans'; font-size: 14px; font-weight: 800; color: #828282; text-decoration: none; text-transform: uppercase;">
+                                                                                                         <singleline>Tasticious chicken<br/>
+                                                                                                         <span style="color: #585858; font-size: 20px;">$12,99</span></singleline>
+                                                                                                         </a>
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                               	<td height="10">
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                               	<td width="194">
+                                                                                                    	<table class="blog_button" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                                                                              <tr>
+                                                                                                                   <td width="105" height="30" bgcolor="#e74c3c" align="center" style="border-radius:4px;">
+                                                                                                                        <a href="#" style="font-family: 'Open Sans'; font-weight: 800;font-size: 14px; color: #ffffff; text-align: center; line-height: 30px; text-transform: uppercase; text-decoration: none;">
+                                                                                                                             <singleline>Buy</singleline>
+                                                                                                                        </a>
+                                                                                                                   </td>
+                                                                                                              </tr>
+                                                                                                         </table>
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                          </table>
+                                                                                	</td>
+                                                                                     <td class="small_prod_box_side" width="3">
+                                                                                     	<img editable="true" src="http://labs.am-themes.com/Flattie/images/shaddow_right.png" width="3" height="216" style="display: block;" border="0" alt=""  />
+                                                                                     </td>
+                                                                                </tr>
+                                                                           </table>
+                                                                      </td>
+                                                                 </tr>
+                                                                 <tr>
+                                                                 	<td>
+                                                                      	<img editable="true" src="http://labs.am-themes.com/Flattie/images/shaddow_bottom_s.png" width="197" height="4" style="display: block;" border="0" alt=""  />
+                                                                      </td>
+                                                                 </tr>
+                                                            </table>
+                                                       </td>
+                                                  </tr>
+                                             </table>
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                   	<td class="content_row" width="600" height="20">
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                   	<td class="content_row" width="600">
+                                        	<table cellspacing="0" cellpadding="0" border="0">
+                                             	<tr>
+                                                  	<td class="small_product_box" valign="top" width="197">
+                                                       	<table cellspacing="0" cellpadding="0" border="0">
+                                                                 <tr>
+                                                                 	<td class="small_product_box_full">
+                                                                      	<table cellspacing="0" cellpadding="0" border="0">
+                                                                           	<tr>
+                                                                                	<td class="small_prod_box_main" valign="top" bgcolor="#e9e9e9" style="border-radius: 5px;">
+                                                                                		<table cellspacing="0" cellpadding="0" border="0">
+                                                                                          	<tr>
+                                                                                               	<td height="10">
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                               	<td  width="194">
+                                                                                                    	<table cellspacing="0" cellpadding="0" border="0">
+                                                                                                         	<tr>
+                                                                                                              	<td width="10">
+                                                                                                                   </td>
+                                                                                                                   <td width="174">
+                                                                                                                   	<a href="#" style="text-decoration: none;">
+                                                                                                                        	<img editable="true" src="http://labs.am-themes.com/Flattie/images/flattie3_32.png" width="174" height="92" style="display: block;" border="0" alt="" />
+                                                                                                                        </a>
+                                                                                                                   </td>
+                                                                                                                   <td width="10">
+                                                                                                                   </td>
+                                                                                                              </tr>
+                                                                                                         </table>
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                               	<td height="10">
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                               	<td width="194" style="text-align: center; line-height: 25px;">
+                                                                                                    	<a href="#" style="font-family: 'Open Sans'; font-size: 14px; font-weight: 800; color: #828282; text-decoration: none; text-transform: uppercase;">
+                                                                                                         <singleline>Tasticious chicken<br/>
+                                                                                                         <span style="color: #585858; font-size: 20px;">$12,99</span></singleline>
+                                                                                                         </a>
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                               	<td height="10">
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                               	<td width="194">
+                                                                                                    	<table class="blog_button" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                                                                              <tr>
+                                                                                                                   <td width="105" height="30" bgcolor="#e74c3c" align="center" style="border-radius:4px;">
+                                                                                                                        <a href="#" style="font-family: 'Open Sans'; font-weight: 800;font-size: 14px; color: #ffffff; text-align: center; line-height: 30px; text-transform: uppercase; text-decoration: none;">
+                                                                                                                             <singleline>Buy</singleline>
+                                                                                                                        </a>
+                                                                                                                   </td>
+                                                                                                              </tr>
+                                                                                                         </table>
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                          </table>
+                                                                                	</td>
+                                                                                     <td class="small_prod_box_side" width="3">
+                                                                                     	<img editable="true" src="http://labs.am-themes.com/Flattie/images/shaddow_right.png" width="3" height="216" style="display: block;" border="0" alt=""  />
+                                                                                     </td>
+                                                                                </tr>
+                                                                           </table>
+                                                                      </td>
+                                                                 </tr>
+                                                                 <tr>
+                                                                 	<td>
+                                                                      	<img editable="true" src="http://labs.am-themes.com/Flattie/images/shaddow_bottom_s.png" width="197" height="4" style="display: block;" border="0" alt=""  />
+                                                                      </td>
+                                                                 </tr>
+                                                            </table>
+                                                       </td>
+                                                       <td class="nomob" width="17">
+                                                       </td>
+                                                       <td class="big_product_box" valign="top" width="386">
+                                                       	<table cellspacing="0" cellpadding="0" border="0">
+                                                            	<tr>
+                                                                 	<td class="big_product">
+                                                                      	<table cellspacing="0" cellpadding="0" border="0">
+                                                                           	<tr>
+                                                                                	<td class="big_product_main" width="383" bgcolor="#e9e9e9" style="border-radius: 5px;">
+                                                                                     	<table cellspacing="0" cellpadding="0" border="0">
+                                                                                          	<tr>
+                                                                                               	<td height="10">
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                                    <td class="big_prod_container">
+                                                                                                    	<table cellspacing="0" cellpadding="0" border="0">
+                                                                                                         	<tr>
+                                                                                                              	<td width="10">
+                                                                                                                   </td>
+                                                                                                                   <td class="big_prod_image" valign="top" width="175">
+                                                                                                                   	<a href="#" style="text-decoration: none;">
+                                                                                                                        	<img editable="true" src="http://labs.am-themes.com/Flattie/images/flattie3_34.png" width="174" height="195" style="display: block;" border="0" alt="Image"  />
+                                                                                                                        </a>
+                                                                                                                   </td>
+                                                                                                                   <td width="20" class="big_prod_spacer">
+                                                                                                                   </td>
+                                                                                                                   <td width="165" class="big_box_info" valign="top">
+                                                                                                                   	<table cellspacing="0" cellpadding="0" border="0">
+                                                                                                                        	<tr>
+                                                                                                                             	<td width="165" style="text-align: center; line-height: 26px;">
+                                                                                                                                       <a href="#" style="font-family: 'Open Sans'; font-size: 14px; font-weight: 800; color: #828282; text-decoration: none; text-transform: uppercase;">
+                                                                                                                                      <singleline> Yummy Salad<br/>
+                                                                                                                                       <span style="color: #585858; font-size: 20px;">$46,99</span></singleline>
+                                                                                                                                       </a>
+                                                                                                                                 	</td>
+                                                                                                                            	</tr>
+                                                                                                                             <tr>
+                                                                                                                             	<td width="165" height="10">
+                                                                                                                                  </td>
+                                                                                                                             </tr>
+                                                                                                                             <tr>
+                                                                                                                             	<td width="165" class="big_box_description" style="text-align:left; color: #828282; font-size: 13px; font-family: 'Open Sans'; line-height:18px;">
+                                                                                                                                  	<singleline>Suspendisse interdum ris sit amet est egestas eget pulvinar mauris faucibus. Vivamus sapien eros.</singleline>
+                                                                                                                                  </td>
+                                                                                                                             </tr>
+                                                                                                                             <tr>
+                                                                                                                             	<td width="165" height="20">
+                                                                                                                                  </td>
+                                                                                                                             </tr>
+                                                                                                                             <tr>
+                                                                                                                             	<td width="165">
+                                                                                                                                  	<table class="blog_button" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                                                                                                            <tr>
+                                                                                                                                                 <td width="105" height="30" bgcolor="#e74c3c" align="center" style="border-radius:4px;">
+                                                                                                                                                      <a href="#" style="font-family: 'Open Sans'; font-weight: 800;font-size: 14px; color: #ffffff; text-align: center; line-height: 30px; text-transform: uppercase; text-decoration: none;">
+                                                                                                                                                           <singleline>Buy</singleline>
+                                                                                                                                                      </a>
+                                                                                                                                                 </td>
+                                                                                                                                            </tr>
+                                                                                                                                       </table>
+                                                                                                                                  </td>
+                                                                                                                             </tr>
+                                                                                                                        </table>
+                                                                                                                   </td>
+                                                                                                                   <td width="10">
+                                                                                                                   </td>
+                                                                                                              </tr>
+                                                                                                         </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td height="10">
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                          </table>
+                                                                                     </td>
+                                                                                     <td class="big_product_side">
+                                                                                     	<img editable="true" class="big_side_shadow" src="http://labs.am-themes.com/Flattie/images/shaddow_right.png" width="3" height="216" style="display: block;" border="0" alt="" />
+                                                                                     </td>
+                                                                                </tr>
+                                                                           </table>
+                                                                      </td>
+                                                                 </tr>
+                                                                 <tr>
+                                                                 	<td class="big_border_bottom">
+                                                                      	<img editable="true" class="big_bottom_shadow" src="http://labs.am-themes.com/Flattie/images/shaddow_bottom_b.png" width="386" height="4" style="display: block;" border="0" alt=""  />
+                                                                      </td>
+                                                                 </tr>
+                                                            </table>
+                                                       </td>
+                                                  </tr>
+                                             </table>
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                   	<td class="content_row" width="600" height="20">
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                   	<td class="content_row" width="600">
+                                        	<table cellspacing="0" cellpadding="0" border="0">
+                                             	<tr>
+                                                       <td class="big_product_box" valign="top" width="386">
+                                                       	<table cellspacing="0" cellpadding="0" border="0">
+                                                            	<tr>
+                                                                 	<td class="big_product">
+                                                                      	<table cellspacing="0" cellpadding="0" border="0">
+                                                                           	<tr>
+                                                                                	<td class="big_product_main" width="383" bgcolor="#e9e9e9" style="border-radius: 5px;">
+                                                                                     	<table cellspacing="0" cellpadding="0" border="0">
+                                                                                          	<tr>
+                                                                                               	<td height="10">
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                                    <td class="big_prod_container">
+                                                                                                    	<table cellspacing="0" cellpadding="0" border="0">
+                                                                                                         	<tr>
+                                                                                                              	<td width="10">
+                                                                                                                   </td>
+                                                                                                                   <td class="big_prod_image" valign="top" width="175">
+                                                                                                                   	<a href="#" style="text-decoration: none;">
+                                                                                                                        	<img editable="true" src="http://labs.am-themes.com/Flattie/images/flattie3_37.png" width="174" height="195" style="display: block;" border="0" alt="Image"  />
+                                                                                                                        </a>
+                                                                                                                   </td>
+                                                                                                                   <td width="20" class="big_prod_spacer">
+                                                                                                                   </td>
+                                                                                                                   <td width="165" class="big_box_info" valign="top">
+                                                                                                                   	<table cellspacing="0" cellpadding="0" border="0">
+                                                                                                                        	<tr>
+                                                                                                                             	<td width="165" style="text-align: center; line-height: 26px;">
+                                                                                                                                       <a href="#" style="font-family: 'Open Sans'; font-size: 14px; font-weight: 800; color: #828282; text-decoration: none; text-transform: uppercase;">
+                                                                                                                                       <singleline>Yummy Salad<br/>
+                                                                                                                                       <span style="color: #585858; font-size: 20px;">$46,99</span></singleline>
+                                                                                                                                       </a>
+                                                                                                                                 	</td>
+                                                                                                                            	</tr>
+                                                                                                                             <tr>
+                                                                                                                             	<td width="165" height="10">
+                                                                                                                                  </td>
+                                                                                                                             </tr>
+                                                                                                                             <tr>
+                                                                                                                             	<td width="165" class="big_box_description" style="text-align:left; color: #828282; font-size: 13px; font-family: 'Open Sans'; line-height:18px;">
+                                                                                                                                  	<singleline>Suspendisse interdum ris sit amet est egestas eget pulvinar mauris faucibus. Vivamus sapien eros.</singleline>
+                                                                                                                                  </td>
+                                                                                                                             </tr>
+                                                                                                                             <tr>
+                                                                                                                             	<td width="165" height="20">
+                                                                                                                                  </td>
+                                                                                                                             </tr>
+                                                                                                                             <tr>
+                                                                                                                             	<td width="165">
+                                                                                                                                  	<table class="blog_button" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                                                                                                            <tr>
+                                                                                                                                                 <td width="105" height="30" bgcolor="#e74c3c" align="center" style="border-radius:4px;">
+                                                                                                                                                      <a href="#" style="font-family: 'Open Sans'; font-weight: 800;font-size: 14px; color: #ffffff; text-align: center; line-height: 30px; text-transform: uppercase; text-decoration: none;">
+                                                                                                                                                           <singleline>Buy</singleline>
+                                                                                                                                                      </a>
+                                                                                                                                                 </td>
+                                                                                                                                            </tr>
+                                                                                                                                       </table>
+                                                                                                                                  </td>
+                                                                                                                             </tr>
+                                                                                                                        </table>
+                                                                                                                   </td>
+                                                                                                                   <td width="10">
+                                                                                                                   </td>
+                                                                                                              </tr>
+                                                                                                         </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td height="10">
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                          </table>
+                                                                                     </td>
+                                                                                     <td class="big_product_side">
+                                                                                     	<img editable="true" class="big_side_shadow" src="http://labs.am-themes.com/Flattie/images/shaddow_right.png" width="3" height="216" style="display: block;" border="0" alt="" />
+                                                                                     </td>
+                                                                                </tr>
+                                                                           </table>
+                                                                      </td>
+                                                                 </tr>
+                                                                 <tr>
+                                                                 	<td class="big_border_bottom">
+                                                                      	<img editable="true" class="big_bottom_shadow" src="http://labs.am-themes.com/Flattie/images/shaddow_bottom_b.png" width="386" height="4" style="display: block;" border="0" alt=""  />
+                                                                      </td>
+                                                                 </tr>
+                                                            </table>
+                                                       </td>
+                                                       <td class="nomob" width="17">
+                                                       </td>
+                                                  	<td class="small_product_box" valign="top" width="197">
+                                                       	<table cellspacing="0" cellpadding="0" border="0">
+                                                                 <tr>
+                                                                 	<td class="small_product_box_full">
+                                                                      	<table cellspacing="0" cellpadding="0" border="0">
+                                                                           	<tr>
+                                                                                	<td class="small_prod_box_main" valign="top" bgcolor="#e9e9e9" style="border-radius: 5px;">
+                                                                                		<table cellspacing="0" cellpadding="0" border="0">
+                                                                                          	<tr>
+                                                                                               	<td height="10">
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                               	<td width="194">
+                                                                                                    	<table cellspacing="0" cellpadding="0" border="0">
+                                                                                                         	<tr>
+                                                                                                              	<td width="10">
+                                                                                                                   </td>
+                                                                                                                   <td width="174">
+                                                                                                                   	<a href="#" style="text-decoration: none;">
+                                                                                                                        	<img editable="true" src="http://labs.am-themes.com/Flattie/images/flattie3_38.png" width="174" height="92" style="display: block;" border="0" alt="" />
+                                                                                                                        </a>
+                                                                                                                   </td>
+                                                                                                                   <td width="10">
+                                                                                                                   </td>
+                                                                                                              </tr>
+                                                                                                         </table>
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                               	<td height="10">
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                               	<td width="194" style="text-align: center; line-height: 25px;">
+                                                                                                    	<a href="#" style="font-family: 'Open Sans'; font-size: 14px; font-weight: 800; color: #828282; text-decoration: none; text-transform: uppercase;">
+                                                                                                         <singleline>Tasticious chicken<br/>
+                                                                                                         <span style="color: #585858; font-size: 20px;">$12,99</span></singleline>
+                                                                                                         </a>
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                               	<td height="10">
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                               	<td width="194">
+                                                                                                    	<table class="blog_button" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                                                                              <tr>
+                                                                                                                   <td width="105" height="30" bgcolor="#e74c3c" align="center" style="border-radius:4px;">
+                                                                                                                        <a href="#" style="font-family: 'Open Sans'; font-weight: 800;font-size: 14px; color: #ffffff; text-align: center; line-height: 30px; text-transform: uppercase; text-decoration: none;">
+                                                                                                                             <singleline>Buy</singleline>
+                                                                                                                        </a>
+                                                                                                                   </td>
+                                                                                                              </tr>
+                                                                                                         </table>
+                                                                                                    </td>
+                                                                                               </tr>
+                                                                                          </table>
+                                                                                	</td>
+                                                                                     <td class="small_prod_box_side" width="3">
+                                                                                     	<img editable="true" src="http://labs.am-themes.com/Flattie/images/shaddow_right.png" width="3" height="216" style="display: block;" border="0" alt=""  />
+                                                                                     </td>
+                                                                                </tr>
+                                                                           </table>
+                                                                      </td>
+                                                                 </tr>
+                                                                 <tr>
+                                                                 	<td>
+                                                                      	<img editable="true" src="http://labs.am-themes.com/Flattie/images/shaddow_bottom_s.png" width="197" height="4" style="display: block;" border="0" alt=""  />
+                                                                      </td>
+                                                                 </tr>
+                                                            </table>
+                                                       </td>
+                                                  </tr>
+                                             </table>
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                   	<td class="content_row" width="600" height="20">
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                   	<td class="content_row" width="600">
+                                        	<table cellspacing="0" cellpadding="0" border="0">
+                                             	<tr>
+                                                  	<td class="one_half" width="280" style="font-family: 'Open Sans'; font-size: 18px; color: #454545; text-transform: uppercase; font-weight: 800; text-align: right;">
+                                                       	<singleline>Oh, wait! There's more.</singleline>
+                                                       </td>
+                                                       <td class="nomob" width="40">
+                                                       </td>
+                                                       <td class="one_half" width="280">
+                                                       	<table class="cta_button" cellspacing="0" cellpadding="0" border="0">
+                                                            	<tr>
+                                                                 	<td width="120" height="30" bgcolor="#829095" align="center" style="border-radius:4px;">
+                                                                      	<a href="#" style="font-family: 'Open Sans'; font-weight: 800;font-size: 14px; color: #ffffff; text-align: center; line-height: 30px; text-transform: uppercase; text-decoration: none;">
+                                                                           	<singleline>Show All</singleline>
+                                                                           </a>
+                                                                      </td>
+                                                                </tr>
+                                                           </table>
+                                                       </td>
+                                                  </tr>
+                                             </table>
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                   	<td class="content_row" width="600" height="40">
+                                        </td>
+                                   </tr>
+						</table>
+					</td>
+                         <td width="50" class="padding">
+                         </td>
+				</tr>
+			</table>
+		</td>
+	</tr>  
+     <tr>
+		<td bgcolor="#27ae60" align="center">
+          	<table cellspacing="0" cellpadding="0" border="0">
+               	<tr>
+                    	<td width="50" class="padding">
+                         </td>
+                         <td width="600" class="wrapper">
+                         	<table cellspacing="0" cellpadding="0" border="0">
+                              	<tr>
+                                   	<td class="content_row" width="600">
+                                        	<table cellspacing="0" cellpadding="0" border="0">
+                                             	<tr>
+                                                  	<td class="footer_one_third" valign="top" width="200">
+                                                       	<table cellspacing="0" cellpadding="0" border="0">
+                                                            	<tr>
+                                                                 	<td height="20">
+                                                                      </td>
+                                                                 </tr>
+                                                                 <tr>
+                                                                 	<td class="footer_one_third" width="200" style="text-align: left; font-family: 'Open Sans'; font-size: 13px; font-weight: 800; color: #8e8e8e; line-height: 25px;">
+															<img editable="true" src="http://labs.am-themes.com/Flattie/images/fb.png" width="25" height="24" style="display: block;float: left;" border="0" alt=""  />&nbsp;&nbsp;<a href="#" style="font-size: 13px; color: #f0f0f0; text-decoration: none; font-weight: 700;"><singleline>Join us on Facebook</singleline></a>
+                                                                      </td>
+                                                                 </tr>
+                                                                 <tr>
+                                                                 	<td height="20">
+                                                                      </td>
+                                                                 </tr>
+                                                            </table>
+                                                       </td>
+                                                       <td class="footer_one_third" valign="top" width="200">
+                                                       	<table cellspacing="0" cellpadding="0" border="0">
+                                                            	<tr>
+                                                                 	<td height="20">
+                                                                      </td>
+                                                                 </tr>
+                                                                 <tr>
+                                                                 	<td class="footer_one_third" width="200" style="text-align: left; font-family: 'Open Sans'; font-size: 13px; font-weight: 800; color: #8e8e8e; line-height: 25px;">
+															<img editable="true" src="http://labs.am-themes.com/Flattie/images/g+.png" width="25" height="24" style="display: block;float: left;" border="0" alt=""  />&nbsp;&nbsp;<a href="#" style="font-size: 13px; color: #f0f0f0; text-decoration: none; font-weight: 700;"><singleline>Add us on Google+</singleline></a>
+                                                                      </td>
+                                                                 </tr>
+                                                                 <tr>
+                                                                 	<td height="20">
+                                                                      </td>
+                                                                 </tr>
+                                                            </table>
+                                                       </td>
+                                                       <td class="footer_one_third" valign="top" width="200">
+                                                       	<table cellspacing="0" cellpadding="0" border="0">
+                                                            	<tr>
+                                                                 	<td height="20">
+                                                                      </td>
+                                                                 </tr>
+                                                                 <tr>
+                                                                 	<td class="footer_one_third" width="200" style="text-align: left; font-family: 'Open Sans'; font-size: 13px; font-weight: 800; color: #8e8e8e; line-height: 25px;">
+															<img editable="true" src="http://labs.am-themes.com/Flattie/images/tw.png" width="25" height="24" style="display: block;float: left;" border="0" alt=""  />&nbsp;&nbsp;<a href="#" style="font-size: 13px; color: #f0f0f0; text-decoration: none; font-weight: 700;"><singleline>Follow us on Twitter</singleline></a>
+                                                                      </td>
+                                                                 </tr>
+                                                                 <tr>
+                                                                 	<td height="20">
+                                                                      </td>
+                                                                 </tr>
+                                                            </table>
+                                                       </td>
+                                                  </tr>
+                                             </table>
+                                        </td>
+                                   </tr>
+						</table>
+					</td>
+                         <td width="50" class="padding">
+                         </td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+     <tr>
+		<td bgcolor="#313131" align="center">
+          	<table cellspacing="0" cellpadding="0" border="0">
+               	<tr>
+                    	<td width="50" class="padding">
+                         </td>
+                         <td width="600" class="wrapper">
+                         	<table cellspacing="0" cellpadding="0" border="0">
+                              	<tr>
+                                   	<td class="content_row" width="600" height="20">
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                   	<td class="content_row" width="600">
+                                        	<table cellspacing="0" cellpadding="0" border="0">
+                                             	<tr>
+                                                  	<td class="footer_two_thirds" width="380" style="font-family: 'Open Sans'; font-size: 13px; color: #f0f0f0; line-height:22px; font-weight: normal;">
+                                                       	<singleline>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi neque, feugiat sed luctus ut, faucibus id tortor.</singleline>
+                                                       </td>
+                                                       <td width="20" class="nomob">
+                                                       </td>
+                                                       <td class="footer_one_third" valign="top" width="200">
+                                                       	<table cellspacing="0" cellpadding="0" border="0">
+                                                                 <tr>
+                                                                 	<td class="footer_one_third" width="200" style="text-align: left; font-family: 'Open Sans'; font-size: 13px; font-weight: 800; color: #8e8e8e; line-height: 20px;">
+															<img editable="true" src="http://labs.am-themes.com/Flattie/images/flattie2-d_25.png" width="17" height="17" style="display: block;float: left;" border="0" alt=""  />&nbsp;&nbsp;<a href="#" style="font-size: 13px; color: #f0f0f0; text-decoration: none; font-weight: 700;"><singleline>+01 234 5678</singleline></a>
+                                                                      </td>
+                                                                 </tr>
+                                                                 <tr>
+                                                                 	<td height="10">
+                                                                      </td>
+                                                                 </tr>
+                                                                 <tr>
+                                                                 	<td class="footer_one_third" width="200" style="text-align: left; font-family: 'Open Sans'; font-size: 13px; font-weight: 800; color: #8e8e8e; line-height: 20px;">
+															<img editable="true" src="http://labs.am-themes.com/Flattie/images/flattie2-d_28.png" width="19" height="13" style="display: block;float: left; margin-top:3px;" border="0" alt=""  />&nbsp;&nbsp;<a href="#" style="font-size: 13px; color: #f0f0f0; text-decoration: none; font-weight: 700;"><singleline>info@support.com</singleline></a>
+                                                                      </td>
+                                                                 </tr>
+                                                            </table>
+                                                       </td>
+                                                   </tr>
+                                             </table>
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                   	<td class="content_row" width="600" height="10">
+                                        </td>
+                                   </tr>
+						</table>
+					</td>
+                         <td width="50" class="padding">
+                         </td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+     <tr>
+		<td bgcolor="#565656" height="1" align="center">
+		</td>
+	</tr>
+     <tr>
+		<td bgcolor="#313131" align="center">
+          	<table cellspacing="0" cellpadding="0" border="0">
+               	<tr>
+                    	<td width="50" class="padding">
+                         </td>
+                         <td width="600" class="wrapper">
+                         	<table cellspacing="0" cellpadding="0" border="0">
+                                   <tr>
+                                   	<td class="content_row" width="600" height="10">
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                   	<td class="content_row" width="600" style="text-align: center;">
+                                        	<span style="font-family: 'Open Sans'; font-size: 12px; color: #838383; text-align: center;">
+                                             	<a href="#" style="text-decoration: none; color: #838383;">
+                                                  	<singleline>Contact us</singleline>
+                                                  </a>
+                                                  &nbsp;|&nbsp;
+                                                  <a href="#" style="text-decoration: none; color: #838383;">
+                                                  	<singleline>Website</singleline>
+                                                  </a>
+                                                  &nbsp;|&nbsp;
+                                                  <a href="#" style="text-decoration: none; color: #838383;">
+                                                  	<unsubscribe style="text-decoration: none; color: #838383;">Unscribe from newsletter</unsubscribe>
+                                                  </a>
+                                             </span>
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                   	<td class="content_row" width="600" height="20">
+                                        </td>
+                                   </tr>
+						</table>
+					</td>
+                         <td width="50" class="padding">
+                         </td>
+				</tr>
+			</table>
+		</td>
+	</tr>                                   
+</table>
+</body>
+</html>
